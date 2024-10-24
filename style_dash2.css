@@ -1,0 +1,220 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    margin: 0;
+    color: #333;
+}
+
+/* Estilos para la cabecera */
+header {    
+    background: #1e212d;    
+    width: 100%;    
+    padding: 20px 0;    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Contenedor de la cabecera */
+.header-container {    
+    max-width: 1200px;    
+    margin: 0 auto;    
+    display: flex;    
+    justify-content: space-between;    
+    align-items: center;    
+    color: #ffffff;
+}
+
+/* Contenedor central para branding, barra de búsqueda y info del usuario */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+}
+
+.branding h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.branding p {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #4CAF50;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.tab-button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+}
+
+.section h3 {
+    margin-top: 0;
+}
+
+.section a {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.section a:hover {
+    color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #f9f9f9;
+}
+
+.back-button {
+    margin-top: 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Menú desplegable */
+.menu-button {    
+    background-color: #4CAF50; /* Color del botón */    
+    color: white;              /* Color del texto */    
+    padding: 10px 20px;        /* Tamaño del botón */    
+    font-size: 16px;           /* Tamaño de la fuente */    
+    border: none;              /* Sin bordes */    
+    border-radius: 5px;        /* Bordes redondeados */    
+    cursor: pointer;           /* Cambia el cursor al pasar sobre el botón */    
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.menu-button:hover {    
+    background-color: #45a049; /* Cambia el color al hacer hover */    
+    transform: translateY(-2px); /* Efecto de movimiento al hacer hover */
+}
+
+.lupa {
+    width: 12px;
+    height: 12px;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.dropdown-content {
+    display: none;             /* Escondido por defecto */
+    position: absolute;        /* Posicionado relativo al dropdown */
+    background-color: white;   /* Fondo blanco */
+    min-width: 160px;          /* Ancho mínimo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra */
+    z-index: 1;                /* Aparece sobre otros elementos */
+    border-radius: 5px;        /* Bordes redondeados */
+}
+
+.dropdown-content a {
+    color: black;              /* Color del texto */
+    padding: 12px 16px;        /* Espaciado interno */
+    text-decoration: none;     /* Sin subrayado */
+    display: block;            /* Ocupa toda la línea */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Cambia el fondo al hacer hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;            /* Muestra el menú al hacer hover */
+}
+.user-info {
+    margin-left: auto; /* Empuja el contenido hacia la derecha */
+    color: white;
+    font-size: 16px;
+}

@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 15px;
+    color: white;
+  }
+  
+  .logo h1 {
+    margin: 0;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .container {
+    display: flex;
+    margin: 20px;
+  }
+  
+  .sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-detail {
+    margin-bottom: 15px;
+  }
+  
+  .user-detail label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .user-detail input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    flex: 1;
+    height: 150vh;           /* Asegura que tome toda la altura de la ventana */
+  }
+  
+  section h2 {
+    text-align: center;
+  }
+  
+  .favorites, .recommendations {
+    margin-bottom: 30px;
+  }
+  
+  .favorite-card, .crypto-card {
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .favorite-card .box, .crypto-card .box {
+    width: 50px;
+    height: 50px;
+    background-color: #aaa;
+    margin: 10px auto;
+  }
+  
+  .star {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s ease;
+  }
+  
+  .star.selected {
+    color: gold;
+  }
+  
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .back-button {
+    background-color: #4CAF50; /* Color verde */
+    color: white;              /* Color del texto */
+    padding: 15px 30px;        /* Tamaño del botón */
+    font-size: 18px;           /* Tamaño de la fuente */
+    border: none;              /* Sin bordes */
+    border-radius: 8px;        /* Bordes redondeados */
+    cursor: pointer;           /* Cambia el cursor cuando se pasa sobre el botón */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+    display: inline-block;      /* Para que el botón no ocupe todo el ancho */
+    
+}
+
+.back-button:hover {
+    background-color: #45a049; /* Cambia el color al hacer hover */
+    transform: translateY(-2px); /* Efecto de movimiento al hacer hover */
+}
+
+.back-button:active {
+    background-color: #3e8e41; /* Color más oscuro al hacer clic */
+    transform: translateY(0);  /* Quita el efecto de movimiento al hacer clic */
+}
+
+.center-button-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    height: 100vh;           /* Ocupa toda la altura de la página */
+}

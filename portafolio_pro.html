@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenBase - Recomendaciones</title>
+    
+</head>
+<body>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login con Near Wallet</title>
+     <link rel="stylesheet" href="portafolio_pro.css">
+  
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <div class="branding">
+                    <h1>OpenBase</h1>
+                    <p>VOLUMEN DE 24 HORAS <span class="volume">$68.92B</span></p>
+                </div>
+                <div class="dropdown">
+                    <button>Menú</button>
+                    <div class="dropdown-content">
+                        <a href="portafolio.html">Portafolio</a>
+                    </div>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar...">
+                    <button><img src="search-icon.png" alt="Buscar"></button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>Información de la Llave</h1>
+            <div id="wallet-info"></div>
+            <section class="user-info">
+                <div class="info-block">
+                    <label for="name">name_usuario</label>
+                    <div class="input-placeholder"></div>
+                </div>
+                <div class="info-block">
+                    <label for="email">mail</label>
+                    <div class="input-placeholder"></div>
+                </div>
+            </section>
+            <script>
+                async function obtenerInfo() {
+                    // Simulando datos falsos de usuarios
+                    const data = [
+                        {
+                            userData: {
+                                nombre: 'Jessie Alain Peña Ramirez',
+                                email: 'ala.dios.near'
+                            },
+                            walletKey: 'cDLJKFGHQBIHWBALSIN2132534KJFGASD'
+                        },
+                    ];
+
+                    // Acceder a los datos del usuario
+                    const infoDiv = document.getElementById('wallet-info');
+                    // Verifica si hay datos disponibles y los formatea
+                    if (data.length > 0) {
+                        data.forEach(user => {
+                            const userInfo = `
+                                <div class="info-item">
+                                    <strong>Nombre:</strong> <span>${user.userData.nombre}</span>
+                                </div>
+                                <div class="info-item">
+                                    <strong>Email:</strong> <span>${user.userData.email}</span>
+                                </div>
+                                <div class="info-item">
+                                    <strong>Llave Temporal:</strong> <span>${user.walletKey}</span>
+                                </div>
+                                <hr>
+                            `;
+                            infoDiv.innerHTML += userInfo;
+                        });
+                    } else {
+                        infoDiv.innerHTML = '<p>No hay información disponible.</p>';
+                    }
+                }
+                // Llamar a la función al cargar la página
+                obtenerInfo();
+            </script>
+            <section class="favorites">
+                <h2>Favoritos</h2>
+                <div class="fav-items">
+                    <div class="fav-item">
+                        <div class="img-placeholder"><img src="imagenes/bitcoin.jpeg" width="60"></div>
+                        <span>BitCoin</span>
+                        <span>$67,220.61</span>
+                    </div>
+                    <div class="fav-item">
+                        <div class="img-placeholder"></div>
+                        <span>Etherum</span>
+                        <span>$2,546.33</span>
+                    </div>
+                    <div class="fav-item">
+                        <div class="img-placeholder"></div>
+                        <span>Tether</span>
+                        <span>$0.9993</span>
+                    </div>
+                </div>
+            </section>
+            <section class="recommendations">
+                <h2>Recomendaciones</h2>
+                <div class="recommend-items">
+                    <div class="rec-item"><div class="img-placeholder"></div><span>AI Companions</span></div>
+                    <div class="rec-item"><div class="img-placeholder"></div><span>Scroll</span>"></div><span>Kite AI</span></div>
+                    <div class="rec-item"><div class="img-placeholder"></div><span>ApeCoin</span></div>
+                    <div class="rec-item"><div class="img-placeholder"></div><span>Solana</span></div>
+                    <div class="rec-item"><div class="img-placeholder"></div><span>Sui</span></div>
+                    <div class="rec-item"><div class="img-placeholder"></div><span>Goatseus Maximus</span></div>
+                    <div class="rec-item"><div class="img-placeholder"></div><span>Aptos</span></div>
+                    <div class="rec-item"><div class="img-placeholder"></div><span>Pepe</span></div>
+                    <div class="rec-item"><div class="img-placeholder"></div><span>Stella</span></div>
+                    <div class="rec-item"><div class="img-placeholder"></div><span>Baby Neiro BNB</span></div>
+                    <div class="rec-item"><div class="img-placeholder"></div><span>Turbo</span></div>
+                </div>
+            </section>
+        </main>
+        <button onclick="location.href='dashboard2.html'">Regresar a Dashboard</button>
+
+    </div>
+    
+</body>
+
+
+</html>

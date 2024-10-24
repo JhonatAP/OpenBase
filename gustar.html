@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenBase</title>
+  <link rel="stylesheet" href="gustar.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>OpenBase</h1>
+    </div>
+    <div class="menu-icon">
+      &#9776;
+    </div>
+  </header>
+  
+  <section class="recommendations">
+    <h2>Recomendaciones</h2>
+    <div class="grid-container">
+      <div class="crypto-card">
+        <span class="star" onclick="toggleStar(this)">&#9734;</span>
+        <div class="box"></div>
+        <p>BitCoin</p>
+      </div>
+
+      <div class="crypto-card">
+        <span class="star" onclick="toggleStar(this)">&#9734;</span>
+        <div class="box"></div>
+        <p>Etherum</p>
+      </div>
+
+      <div class="crypto-card">
+        <span class="star" onclick="toggleStar(this)">&#9734;</span>
+        <div class="box"></div>
+        <p>Tether</p>
+      </div>
+
+      <div class="crypto-card">
+        <span class="star" onclick="toggleStar(this)">&#9734;</span>
+        <div class="box"></div>
+        <p>ApeCoin</p>
+      </div>
+
+      <div class="crypto-card">
+        <span class="star" onclick="toggleStar(this)">&#9734;</span>
+        <div class="box"></div>
+        <p>Solana</p>
+      </div>
+
+      <div class="crypto-card">
+        <span class="star" onclick="toggleStar(this)">&#9734;</span>
+        <div class="box"></div>
+        <p>Sui</p>
+      </div>
+
+      <div class="crypto-card">
+        <span class="star" onclick="toggleStar(this)">&#9734;</span>
+        <div class="box"></div>
+        <p>Goatseus Maximus</p>
+      </div>
+
+      <div class="crypto-card">
+        <span class="star" onclick="toggleStar(this)">&#9734;</span>
+        <div class="box"></div>
+        <p>Aptos</p>
+      </div>
+
+      <div class="crypto-card">
+        <span class="star" onclick="toggleStar(this)">&#9734;</span>
+        <div class="box"></div>
+        <p>Pepe</p>
+      </div>
+
+      <div class="crypto-card">
+        <span class="star" onclick="toggleStar(this)">&#9734;</span>
+        <div class="box"></div>
+        <p>Stella</p>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="button-container">
+    <button class="back-button" onclick="location.href='dashboard2.html'">Volver al inicio</button>
+    <button id="megustas-button" class="back-button" style="display: none;" onclick="location.href='ver_megustas.html'">Ver megustas</button>
+  </div>
+
+  <script>
+    function toggleStar(element) {
+      element.classList.toggle("selected");
+
+      // Verificar si alguna estrella está seleccionada
+      const stars = document.querySelectorAll('.star');
+      let anySelected = false;
+
+      stars.forEach(star => {
+        if (star.classList.contains("selected")) {
+          anySelected = true;
+        }
+      });
+
+      // Mostrar el botón si alguna estrella está seleccionada
+      const megustasButton = document.getElementById('megustas-button');
+      if (anySelected) {
+        megustasButton.style.display = "block";
+      } else {
+        megustasButton.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

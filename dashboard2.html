@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Recomendaciones Crypto</title>
+    <link rel="stylesheet" href="style_dash2.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Menú desplegable -->
+            <div class="dropdown">
+                <button class="menu-button">Menú</button>
+                <div class="dropdown-content">
+                    <a href="info.html">Portafolio</a>
+                </div>
+            </div>
+    
+            <!-- Branding, barra de búsqueda, y información del usuario centrados -->
+            <div class="center-content">
+                <div class="branding">
+                    <h1>OpenBase</h1>
+                    <p>VOLUMEN DE 24 HORAS <span class="volume">$68.92B</span></p>
+                </div>
+    
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar...">
+                    <button><img src="imagenes/lupa.jpeg" alt="Buscar" class="lupa"></button>
+                </div>
+    
+                <div class="user-info">
+                    <span>Usuario: Jessie Alain</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Sistema de recomendaciones crypto colaborativas</h2>
+        <h3>Bienvenido Jessie Alain</h3>
+        <p class="subtext">Las listas de nuestras criptomonedas para observar se basan en los últimos datos de precios y comportamiento del usuario.</p>
+        <div class="tabs">
+            <button class="tab-button active" onclick="window.location.href='tablas_de_clasificacion.html'">Tablas de clasificación</button>
+            <button class="tab-button" onclick="window.location.href='mayores_ganancias.html'">Ganadores</button>
+            <button class="tab-button" onclick="window.location.href='mayores_perdidas.html'">perdedores</button>
+            <button class="tab-button" onclick="window.location.href='populares.html'">Más populares</button>
+            <button class="tab-button" onclick="window.location.href='mas_vistos.html'">Más visitados</button>
+        </div>
+        <div class="content">
+            <div class="section popular">
+                <h3>Populares</h3>
+                <a href="populares.html">Ver más ></a>
+                <ul id="popular-list"></ul>
+            </div>
+            <div class="section ganancias">
+                <h3>Mayores ganancias</h3>
+                <a href="mayores_ganancias.html">Ver más ></a>
+                <ul id="ganancias-list"></ul>
+            </div>
+            <div class="section perdidas">
+                <h3>Mayores pérdidas</h3>
+                <a href="mayores_perdidas.html">Ver más ></a>
+                <ul id="perdidas-list"></ul>
+            </div>
+            <div class="section visitados">
+                <h3>Más visto</h3>
+                <a href="mas_vistos.html">Ver más ></a>
+                <ul id="visitados-list"></ul>
+            </div>
+        </div>
+    </main>
+    <script src="dashboard.js"></script>
+</body>
+</html>

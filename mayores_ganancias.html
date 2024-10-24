@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Recomendaciones Crypto</title>
+    <link rel="stylesheet" href="style_dash2.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="branding">
+                <h1>Sistema de Recomendaciones</h1>
+                <p>Criptomonedas con mayores ganancias</p>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="tabs">
+            <button class="tab-button active">Top Ganancias</button>
+            <button class="tab-button">Nuevas Criptos</button>
+        </div>
+        <div class="content">
+            <div class="section popular">
+                <h3>Mayores ganancias</h3>
+                <ul id="ganancias-list"></ul>
+            </div>
+            <div id="crypto-info" class="crypto-info">
+                <!-- Aquí se mostrará la información de la cripto seleccionada -->
+            </div>
+        </div>
+    </main>
+    
+    <button class="back-button" onclick="location.href='dashboard2.html'">Regresar a Dashboard</button>
+    
+    <script src="dashboard.js"></script>
+    </body>
+</html>
+
+
